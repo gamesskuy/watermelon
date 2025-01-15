@@ -2,7 +2,7 @@
 	"name": "Watermelon",
 	"short_name": "Watermelon",
 	"description": "Disc",
-	"start_url": "index.html",
+	"start_url": "play.html",
 	"display": "fullscreen",
 	"orientation": "portrait",
 	"background_color": "#ffffff",
