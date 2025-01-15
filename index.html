@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play Google Snake Game online with mods. No extensions or bookmarks required. Enjoy mobile and desktop versions without ads or distractions. Play now!">
+  
+  <!-- Adding canonical URL -->
+  <link rel="canonical" href="/index.html">
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Google Snake Game">
+  <meta property="og:description" content="Play Google Snake Game online with mods. No extensions or bookmarks required. Enjoy mobile and desktop versions without ads or distractions. Play now!">
+  <meta property="og:image" content="/snakebg.webp">
+  <meta property="og:url" content="/index.html">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Google Snake Game">
+  <meta name="twitter:description" content="Play Google Snake Game online with mods. No extensions or bookmarks required. Enjoy mobile and desktop versions without ads or distractions. Play now!">
+  <meta name="twitter:image" content="/snakebg.webp">
+  
+  <title>Google Snake Game</title>
+  <link rel="icon" type="image/png" href="/snake.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+
+  <!-- Sitemap link -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  
+  <!-- Schema.org Markup for WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Google Snake Game",
+    "description": "Play Google Snake Game with mods, no extensions required. It works on mobile and desktop and has no ads.",
+    "url": "https://www.yoursite.com/index.html"
+  }
+  </script>
+
+  <style>
+    /* Reset dasar untuk margin dan padding */
+    body, h1, p, nav, div, a {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Gaya utama untuk body dengan gradient dua warna */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(to right, #3498db, #2ecc71); /* Gradient biru ke hijau */
+      color: #fff;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Navigasi */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      color: white;
+      padding: 15px 25px;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      border-bottom: 2px solid #333;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    /* Header */
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 2.5rem;
+      margin-top: 50px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Gambar PLAY */
+    a img {
+      display: block;
+      max-width: 80%;
+      height: auto;
+      margin: 50px auto 20px auto;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      border-radius: 12px;
+    }
+
+    a img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+
+    /* Responsif untuk perangkat kecil */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      a img {
+        max-width: 95%;
+      }
+    }
+
+    /* Responsif untuk perangkat ponsel */
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.9rem;
+      }
+
+      a img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <nav>
+    <div style="flex-grow: 1"><a href="/index.html">Snake Game</a></div>
+
+    <!-- Menu Navigasi di kanan -->
+    <div>
+      <a href="/about.html">About</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <h1>Google Snake Game</h1>
+
+  <!-- Gambar PLAY dengan target="_blank" untuk membuka di tab baru -->
+  <a href="/play.html" target="_blank">
+    <img src="/snakebg.webp" alt="PLAY">
+  </a>
+
+</body>
+</html>

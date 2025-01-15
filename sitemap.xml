@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Halaman Utama -->
+  <url>
+    <loc>/</loc>
+    <lastmod>2025-01-12</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Halaman About -->
+  <url>
+    <loc>/about.html</loc>
+    <lastmod>2025-01-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Halaman Disclaimer -->
+  <url>
+    <loc>/disclaimer.html</loc>
+    <lastmod>2025-01-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Halaman Privacy -->
+  <url>
+    <loc>/privacy.html</loc>
+    <lastmod>2025-01-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Halaman Contact -->
+  <url>
+    <loc>/contact.html</loc>
+    <lastmod>2025-01-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Halaman Play -->
+  <url>
+    <loc>/play.html</loc>
+    <lastmod>2025-01-12</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Halaman Favicon -->
+  <url>
+    <loc>/snake.png</loc> <!-- Favicon -->
+    <lastmod>2025-01-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

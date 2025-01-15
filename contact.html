@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with us using our contact form. You can also send a message directly via WhatsApp.">
+  <meta name="keywords" content="Contact, Google Snake Game, contact form, WhatsApp, send message, customer support">
+  <meta name="author" content="Your Website">
+  <title>Contact Us | Google Snake Game</title>
+  <link rel="icon" type="image/png" href="/snake.png">
+  <link href="//fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+
+  <style>
+    /* Reset dasar untuk margin dan padding */
+    body, h1, p, nav, div, a {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Gaya utama untuk body dengan gradient dua warna */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(to right, #3498db, #2ecc71); /* Gradient biru ke hijau */
+      color: #fff;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Navigasi */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      color: white;
+      padding: 15px 25px;
+      border-bottom: 2px solid #333; /* Menambahkan border bawah untuk pemisahan */
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    /* Header */
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 2.5rem;
+      margin-top: 50px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Formulir Kontak */
+    .contact-page .app.isSingleItem {
+      padding: 115px 15px 60px;
+    }
+    
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .contact-form button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      background-color: #25d366;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .contact-form button img {
+      margin-right: 5px;
+    }
+
+    .contact-form button:hover {
+      background-color: #20b358;
+    }
+  </style>
+</head>
+<body class="contact-page">
+
+  <!-- Navigasi -->
+  <nav>
+    <div style="flex-grow: 1"><a href="/index.html">Snake Game</a></div>
+
+    <!-- Menu Navigasi di kanan -->
+    <div>
+      <a href="/about.html">About</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <h1>Contact Us</h1>
+
+  <!-- Formulir Kontak -->
+  <div class="contact-form">
+    <h2>Get in Touch</h2>
+    <form id="contactForm" onsubmit="sendMessage(event)">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" placeholder="Write your message here" required></textarea>
+
+      <button type="submit">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20" style="vertical-align: middle; margin-right: 5px;"> 
+        Send to WhatsApp
+      </button>
+    </form>
+  </div>
+
+  <script>
+    function sendMessage(event) {
+      event.preventDefault(); // Mencegah reload halaman
+
+      // Mengambil input nama, email, dan pesan
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // Cek apakah semua kolom telah terisi
+      if (!name || !email || !message) {
+        alert('Please fill in all fields.');
+        return;
+      }
+
+      const whatsappNumber = '6282376184469'; // Ganti dengan nomor WhatsApp Anda
+      const whatsappMessage = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+      window.open(whatsappURL, '_blank'); // Buka WhatsApp di tab baru
+    }
+  </script>
+
+</body>
+</html>
