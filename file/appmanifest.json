@@ -2,7 +2,7 @@
 	"name": "Watermelon",
 	"short_name": "Watermelon",
 	"description": "Disc",
-	"start_url": "play.html",
+	"start_url": "https://gamesskuy.github.io/watermelon/file/play.html",
 	"display": "fullscreen",
 	"orientation": "portrait",
 	"background_color": "#ffffff",
